@@ -1,0 +1,32 @@
+[user]
+	email = davidn5013@yahoo.se
+	name = David Nilsson
+[gui]
+	recentrepo = C:/Users/David Nilsson/Dropbox/Dev/Privat/AutoHotkey Script/repo/startupscript
+	recentrepo = C:/Users/David Nilsson/Tools
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	longpaths = true
+	autocrlf = false
+	editor = 'C:\\Program Files\\Vim\\vim90\\vim.exe'
+[alias]
+	lo = log --oneline
+	ac = commit -am
+	a = commit -m
+	ls = !git log --oneline
+	s = !git status
+	cm = "!git commit -m "
+[init]
+	defaultBranch = main
+[safe]
+	directory = C:/Users/David Nilsson/Tools
+[web]
+	browser = firefox
+[browser "firefox"]
+	path = C:\\Program Files\\Mozilla Firefox\\firefox.exe
+[gc]
+	auto = 0
